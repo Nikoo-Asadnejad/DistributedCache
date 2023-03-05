@@ -132,7 +132,13 @@ public class CacheService : ICacheService
       }
 
     }
+
+    public async Task RemoveAsync(string key)
+    => _memoryCache.Remove(key);
     
+    public async Task RemoveListAsync(List<string> keies)
+      => keies.ForEach(async key => await RemoveAsync(key));
+
     private async Task<MemoryCacheEntryOptions> GenerateCacheOptions(TimeSpan? expirationDuration, TimeSpan? unusedExpirationDuration)
     => new()
         {

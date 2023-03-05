@@ -29,4 +29,7 @@ public interface ICacheService
         string key, object data, Func<Task<T>> func,
         TimeSpan? expirationDuration = null,
         TimeSpan? unusedExpirationDuration = null);
+
+    Task RemoveAsync(string key);
+    Task RemoveListAsync(List<string> keies);
 }
