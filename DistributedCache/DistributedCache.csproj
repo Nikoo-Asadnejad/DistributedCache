@@ -8,13 +8,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
-    </ItemGroup>
-
-    <ItemGroup>
         <PackageReference Include="Grpc.AspNetCore" Version="2.49.0" />
         <PackageReference Include="Grpc.AspNetCore.Server" Version="2.52.0-pre1" />
         <PackageReference Include="protobuf-net.Grpc.AspNetCore" Version="1.1.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="GrpcServices" />
     </ItemGroup>
 
 </Project>
