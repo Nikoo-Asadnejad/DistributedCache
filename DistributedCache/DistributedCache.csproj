@@ -14,7 +14,11 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Configurations" />
+      <Folder Include="Core\Dtos" />
+      <Folder Include="Core\Interfaces" />
       <Folder Include="GrpcServices" />
+      <Folder Include="Infrastructure\Services" />
     </ItemGroup>
 
 </Project>
