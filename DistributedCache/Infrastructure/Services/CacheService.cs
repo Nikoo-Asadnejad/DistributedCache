@@ -1,8 +1,9 @@
+using DistributedCache.Core.Interfaces;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace DistributedCache.Infrastructure.Services;
 
-public class CacheService
+public class CacheService : ICacheService
 {
     private  IMemoryCache _memoryCache;
 

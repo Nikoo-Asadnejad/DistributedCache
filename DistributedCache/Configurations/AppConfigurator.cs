@@ -1,3 +1,5 @@
+using DistributedCache.Core.Interfaces;
+using DistributedCache.Infrastructure.Services;
 using ProtoBuf.Grpc.Server;
 
 namespace DistributedCache.Configurations;
@@ -6,7 +8,7 @@ public static class AppConfigurator
 {
     public static void ConfigureDI(IServiceCollection services)
     {
-        
+        services.AddScoped<ICacheService, CacheService>();
     }
 
     public static void ConfigureGrpcServices(IServiceCollection services)
