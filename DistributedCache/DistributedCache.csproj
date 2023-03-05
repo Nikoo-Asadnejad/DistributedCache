@@ -10,14 +10,13 @@
     <ItemGroup>
         <PackageReference Include="Grpc.AspNetCore" Version="2.49.0" />
         <PackageReference Include="Grpc.AspNetCore.Server" Version="2.52.0-pre1" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3-beta1" />
         <PackageReference Include="protobuf-net.Grpc.AspNetCore" Version="1.1.1" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Core\Dtos" />
-      <Folder Include="Core\Interfaces" />
       <Folder Include="GrpcServices" />
-      <Folder Include="Infrastructure\Services" />
     </ItemGroup>
 
 </Project>
